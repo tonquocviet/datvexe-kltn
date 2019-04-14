@@ -46,6 +46,7 @@ public class ChangePasswordAction extends Action {
 			//userForm.setUsername(userBO.getPassword(uID).getUsername());
 			//System.out.println(userBO.getPassword(uID).getUsername());
 			return mapping.findForward("render");
+				// return mapping.findForward("render");
 		}
 		return mapping.findForward("render");
 	}

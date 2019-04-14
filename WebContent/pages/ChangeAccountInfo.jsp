@@ -33,6 +33,7 @@
 		<html:form action="account/changeInfo" method="post" styleClass="form-horizontal">
 			<div class="row" style="margin-top:50px">
 				<div class="col-md-7 col-md-offset-2">
+          <p style="color:red"><bean:write name = "userForm" property="notice"/></p>
 					<div class="form-group">
 						<div class="col-md-3">
 							<label>Tên đăng nhập</label>
@@ -81,16 +82,14 @@
 					<div class="form-group">
 						<div class="col-md-2 col-md-offset-3">
 						<button class="btn btn-success" name="submit"
-							value="submit">Lưu lại</button>
+              value="submit">Lưu lại</button>
+              <!-- <input type="submit"  value="Lưu lại" onclick="window.location.replace('${pageContext.request.contextPath}')"> -->
 						</div>
 						<div class="col-md-2 ">
 						<a type="button" href="${pageContext.request.contextPath}/account/changePassword.do" class="btn btn-primary" >Đổi mật khẩu</a>
 						</div>
 					</div>
 				</div>
-				
-				
-
 		</html:form>
 	</div>
 </body>

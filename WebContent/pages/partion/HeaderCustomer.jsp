@@ -13,9 +13,9 @@
                 </div>
                 <div class="col-md-9 header-blue-right-menu pl0">
                     <ul class="header-blue-menu-list">
-                         <li><a href="${pageContext.request.contextPath}/transporter/register.do">Đăng ký nhà xe</a></li> 
+                        <li><a href="${pageContext.request.contextPath}/transporter/register.do">Đăng ký nhà xe</a></li> 
                         <li><a href="${pageContext.request.contextPath}/ticket/info.do">Kiểm tra vé</a></li>
-                            <li><a href="${pageContext.request.contextPath}">Trang chủ</a></li>
+                        <li><a href="${pageContext.request.contextPath}">Trang chủ</a></li>
                     </ul>
                     <ul class="header-blue-menu-list">
                     		<%String username=(String)request.getSession().getAttribute("username");%>
@@ -24,7 +24,7 @@
                              <li><a href="${pageContext.request.contextPath}/register.do">Đăng ký</a></li>
                     		<%}else{ %>
                     		<li><a href="${pageContext.request.contextPath}/logout.do">Đăng xuất</a></li>
-                    		<li><a href="${pageContext.request.contextPath}/account/changeInfo.do">Tài khoản</a></li>
+                    		<li><a href="${pageContext.request.contextPath}/account/changeInfo.do">Quản lý tài khoản</a></li>
                     		<%} %>
                             
                     </ul>
