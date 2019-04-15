@@ -61,6 +61,7 @@ public class LoginAction extends Action{
 				session.setAttribute("role", user.getPhanQuyen());
 				session.setAttribute("tenNguoiDung", user.getTenNguoiDung());
 				// userForm.setNotice("//");
+				userForm.setNotice("Đăng nhập thành công");
 				return mapping.findForward("success-customer");
 			}
 			else

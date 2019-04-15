@@ -36,6 +36,7 @@ public class ChangeAccountInfoAction extends Action {
 			String email = userForm.getEmail();
 			System.out.println(soDienThoai);
 			userBO.ChangeInfo(userId,username,tenNguoiDung,soDienThoai,diaChi,email);
+      userForm.setNotice("Đổi thông tin tài khoản thành công");
 			return mapping.findForward("success");
 		}else{	
 			User user = userBO.getInfUser(userId);
@@ -44,10 +45,9 @@ public class ChangeAccountInfoAction extends Action {
 			userForm.setSoDienThoai(user.getSoDienThoai());
 			userForm.setDiaChi(user.getDiaChi());
 			userForm.setEmail(user.getEmail());
+      
 			return mapping.findForward("render");
 		}
-		
-			
 	}
 		
 	}

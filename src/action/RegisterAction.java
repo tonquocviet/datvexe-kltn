@@ -49,8 +49,6 @@ public class RegisterAction extends Action{
 					userForm.setNotice("Username đã tồn tại!");
 					return mapping.findForward("fail");
 				}
-				
-				
 			}
 			userForm.setNotice("Tên đăng nhập hoặc mật khẩu không đúng định dạng!");
 			return mapping.findForward("fail");

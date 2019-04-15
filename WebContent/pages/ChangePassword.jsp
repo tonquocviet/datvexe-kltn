@@ -36,9 +36,8 @@
     <div class="col-md-7 col-md-offset-2">
       <h4>Đổi mật khẩu
       </h4>
-      
-		
       <div class="form-group">
+          <p style="color:red"><bean:write name="userForm" property="notice"/></p>
       	<div class="col-md-4">
       		<label> Mật khẩu cũ <span style="display:inline; color:red" >(*)</span>:</label>
       	</div>
@@ -69,7 +68,8 @@
       <div class="col-md-4">
       	</div>
       	<div class="col-md-8">
-        <button name="submit" value="Save" class="btn btn-success">Đổi mật khẩu</button>
+          <button name="submit" value="Trở về" class="btn btn-primary" style="margin-right: 3rem" onclick="history.go(-1);">Trở về</button>
+          <button name="submit" value="Save" class="btn btn-success">Đổi mật khẩu</button>
         </div>
       </div>
     </div>
