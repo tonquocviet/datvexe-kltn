@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                        <a class="logo-image" href="${pageContext.request.contextPath}"><img height="50" src="${pageContext.request.contextPath}/public/images/logo.svg"></a>
+                        <a class="logo-image" href="${pageContext.request.contextPath}"><img height="70" src="${pageContext.request.contextPath}/public/images/bus_new.jpg"></a>
                     <ul class="header-action-bar visible-sm visible-xs">
                         <li><a class="menu-action" href="#"><i class="fa fa-bars"></i></a></li>
                     </ul>
